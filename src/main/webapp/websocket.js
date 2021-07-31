@@ -44,7 +44,7 @@ function connect() {
         if (message.status == 400) { // Completed
         	log.innerHTML += "\n";
        		log.innerHTML += "Game Result -  " + message.message + " - Current Point  " + message.point + "\n";
-       		log.innerHTML += +message.calculation + "\n";
+       		log.innerHTML +=  message.calculation + "\n";
        		log.innerHTML += "\n";
        		log.innerHTML += "You can join the New Game";
        		gameStarted = false;
