@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Playground</title>
+    </head>
+    <body>
+
+        <table>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="username" placeholder="Username"/>
+                </td>
+                <td>
+                    <button id="connect" type="button" onclick="connect();" >Connect</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select id="opponent" placeholder="Opponent"/>
+                </td>
+                <td>
+                    <button id="joinagame" type="button" onclick="joinAGame();" >Join A Game</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea readonly="true" rows="10" cols="100" id="log"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="game-1" type="button" onclick="sendAPoint(-1);" >-1</button>
+                    <button id="game-2" type="button" onclick="sendAPoint(0);" >0</button>
+                    <button id="game-3" type="button" onclick="sendAPoint(1);" >+1</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+    <script src="websocket.js"></script>
+
+</html>

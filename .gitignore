@@ -1,0 +1,42 @@
+### Maven ###
+/**/HELP.md
+/**/target/
+/**/!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+/**/.apt_generated
+/**/.classpath
+/**/.factorypath
+/**/.project
+/**/.settings
+/**/.springBeans
+/**/.sts4-cache
+
+### IntelliJ IDEA ###
+/**/.idea
+/**/*.iws
+/**/*.iml
+/**/*.ipr
+
+### NetBeans ###
+/**/nbproject/private/
+/**/nbbuild/
+/**/dist/
+/**/nbdist/
+/**/.nb-gradle/
+/**/build/
+
+### Eclipse ###
+/**/.metadata/
+/**/.recommenders/
+/**/.MANIFEST.MF/
+
+### Node js ###
+/**/node_modules/
+
+### HSQL/H2 ###
+/**/data_db/
+
+### LOGGER ###
+/**/*.log*
+/**/*.log*
