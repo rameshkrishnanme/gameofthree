@@ -10,7 +10,7 @@ function connect() {
     
     ws = new WebSocket("ws://" +host  + pathname + "game/" + username);
 
-	var username = document.getElementById("username").disabled;
+	document.getElementById("username").disabled = true;
 
     ws.onmessage = function(event) {
         console.log(event.data);
@@ -81,12 +81,20 @@ var gameStarted = false;
 
 function refreshPlayers() {
 	
+	var username = document.getElementById("username");
+	
 	if (gameStarted) {
 		return;
 	}
 	
+	var username = document.getElementById("username").value;
+	if (username == "") {
+		username = "-";
+	}
+	console.log(username)
+	
 	const xhttp = new XMLHttpRequest();
-	const url='http://' + host + pathname + "/users";
+	const url='http://' + host + pathname + "users/" + username;
 	xhttp.open("GET", url);
 	xhttp.send();
 	
