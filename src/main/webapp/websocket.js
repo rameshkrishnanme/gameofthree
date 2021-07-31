@@ -11,6 +11,7 @@ function connect() {
     ws = new WebSocket("ws://" +host  + pathname + "game/" + username);
 
 	document.getElementById("username").disabled = true;
+	document.getElementById("connect").disabled = true;
 
     ws.onmessage = function(event) {
         console.log(event.data);
