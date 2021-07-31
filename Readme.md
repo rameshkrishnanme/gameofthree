@@ -6,4 +6,4 @@ Boot the application
     
 Play the Game either with second user or CPU
 
-    ![Screenshot](Screenshot2021-07-31125900.png)
+    ![](https://github.com/rameshkrishnanme/gameofthree/blob/master/Screenshot2021-07-31125900.png)
